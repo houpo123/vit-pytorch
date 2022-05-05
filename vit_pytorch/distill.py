@@ -108,7 +108,7 @@ class DistillWrapper(nn.Module):
         hard = False
     ):
         super().__init__()
-        assert (isinstance(student, (DistillableViT, DistillableT2TViT, DistillableEfficientViT))) , 'student must be a vision transformer'
+        # assert (isinstance(student, (DistillableViT, DistillableT2TViT, DistillableEfficientViT))) , 'student must be a vision transformer'
 
         self.teacher = teacher
         self.student = student
